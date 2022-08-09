@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.nbar{
+  display:flex;
+  justify-content: center;
+  padding:40px;
+  background-color: #282c34;
+  color: cornsilk;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: baseline;
+  margin-top:20px;
+  margin-right:10px;
+  
+}
+
+.chatArea{
+  background-color:white;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  width:75%;
+  display:flex;
+  flex-direction: column;
+  overflow:scroll;
+  overflow-x: hidden;
+  max-height:500px;
+}
+
+.inputField{
+  flex:9;
+  height:40px;
+  border-radius:18px;
+  padding-left:20px;
+  box-shadow:2px 2px 5px black;
+  font-size:15px;
+  font-family: Arial, sans-serif;
+}
+.submitBtn{
+  flex:1;
+  margin-right:10px;
+  border-radius:18px;
+  box-shadow:2px 2px 5px black;
+}
+
+.inputBox{
+  padding:10px;
+  margin:5px;
+  width:100%;
+  display:flex;
+  position:absolute;
+  bottom:0px;
+  position:fixed;
+  flex-direction: row;
+  
+}
+
+body{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+.message{
+  
+  
+  padding:15px;
+  border-radius: 18px;
+  position:relative;
+  font-size:15px;
+  font-family: Arial, sans-serif;
+}
+
+.bgcolor-self{
+  background-color: tomato;
+  margin-right:20px;
+}
+
+.bgcolor-other{
+  background-color: #282c34;
+  margin-left:20px;
+}
+
+
+h4{
+  margin-right:9px;
+}
+
+.speech_arrow_other::before{
+  content:"";
+  position:absolute;
+  display:block;
+
+  left:-15px;
+  top:15px;
+
+  border-top:8px solid transparent;
+  border-bottom:8px solid transparent;
+  border-right:15px solid black;
+  
+
+}
+
+.speech_arrow_self::after{
+  content:"";
+  position:absolute;
+
+  border-top:8px solid transparent;
+  border-bottom:8px solid transparent;
+  border-right:15px solid tomato;
+
+  right:-10px;
+  
+  transform: rotate(-60deg);
+}
+
+
+
+.chatMessage-other {
+  color:white;
+  margin-left:20%;
+  margin-right:20%;
+  display:flex;
+  padding:0px;
+  align-items: flex-start;
+  
+  
+}
+
+.chatMessage-self {
+  color:white;
+  margin-left:20%;
+  margin-right:20%;
+  display:flex;
+  padding:0px;
+  align-items: flex-start;
+  flex-direction:row-reverse;
+}
