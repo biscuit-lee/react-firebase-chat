@@ -69,7 +69,7 @@ function Chat(){
   let  chat_style = 'chatMessage-other';
   
   useEffect( () => {
-    const q = query(dbRef,orderBy("timestamp"),limit(20));
+    const q = query(dbRef,orderBy("timestamp"));
 
     onSnapshot(q, (snapshot) => {
       setChat((snapshot.docs.map(
